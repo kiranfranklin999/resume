@@ -67,17 +67,17 @@ section {
     display: inline-block;
 }
 #Bachelor_data {
-  height: 1000px;
+  height: 700px;
 }
 #Boltzmann_work{
   height: 1000px;
 }
 #Cuurent_work{
-  height: 900px;
+  height: 500px;
 }
 .card {
-    height: 100%;
-    width: 230px;
+    
+    width: auto;
     outline: none;
     
     cursor: pointer; /* Add cursor pointer to indicate that the card is clickable */
@@ -86,7 +86,7 @@ section {
   .card__front,
   .card__back {
     height: auto;
-    width: 230px;
+    width: auto;
     position: absolute;
     top: 0;
     left: 0;
