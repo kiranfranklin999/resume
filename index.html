@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="color.css">
     <script src="https://kit.fontawesome.com/9209300180.js" crossorigin="anonymous"></script>
     <title>Kiran Franklin | Senior Research Associate | Aspring AI & Bioinformatics Engineer</title>
+    <script>
+        function toggleCard(card) {
+    card.classList.toggle("is-flipped");
+  }
+  
+  var cards = document.querySelectorAll(".card");
+  for (var i = 0; i < cards.length; i++) {
+    cards[i].addEventListener("click", function() {
+      var cardId = this.id;
+      toggleCard(cardId);
+    });
+  }
+      </script>
 </head>
 <body>
 
@@ -240,9 +253,13 @@ Over the course of the internship, I successfully deployed more than 25 real-tim
                     </p>
                 </div>
                 <div class="col-12 col-md-4 px-5 py-4  border-start border-end">
-                    <i class="fa-solid fa-code h1 text-accent-3"></i>
-                    <h4 class="py-2 fw-semibold text-accent-3">Automated virtual Screening  and Validation of Small molecules: ADMET and Molecular docking 
-                    </h4>
+                    <div id="card3" class="card" onclick="toggleCard(this)">
+                        <div class="card__front">
+                            <i class="fa-solid fa-code h1 text-accent-3"></i>
+                            <h4 class="py-2 fw-semibold text-accent-3">Automated virtual Screening  and Validation of Small molecules: ADMET and Molecular docking 
+                            </h4>
+                        </div>
+                        <div class="card__back">
                     <p class="lh-lg">
                         <ul>
                             <li>
@@ -260,22 +277,32 @@ Over the course of the internship, I successfully deployed more than 25 real-tim
                         </ul>
                     </p>
                 </div>
-                <div class="col-12 col-md-4 px-5 py-4">
-                    <i class="fa-solid fa-code h1 text-accent-2"></i>
-                    <h4 class="py-2 fw-semibold text-accent-2">Chemical space exploration and surrogate modelling.
-                    </h4>
-                    <p class="lh-lg">
-                        <ul>
-                            <li>
-                                Developed advanced strategies for exploring the chemical space in order to optimize QSAR modeling. By leveraging techniques such as active learning and uncertainty sampling, I am able to efficiently identify key areas of the chemical space that are most likely to yield high-quality data and accurate modeling results.
-                            </li>
-                            <li>
-                                Implemented a sophisticated surrogate docking pipeline that is capable of predicting the affinity of drug compounds without actually performing docking calculations. This approach enables faster and more efficient analysis of potential drug candidates, while still providing accurate and reliable insights into their properties.
-                            </li>
-                        </ul>
-                    </p>
                 </div>
-            </div>
+                </div>
+                <div class="col-12 col-md-4 px-5 py-4">
+                    
+                        <div id="card2" class="card" onclick="toggleCard(this)">
+                          <div class="card__front">
+                            <i class="fa-solid fa-code h1 text-accent-2"></i>
+                            <h4 class="py-2 fw-semibold text-accent-2">Chemical space exploration and surrogate modelling.
+                            </h4>
+                          </div>
+                          <div class="card__back">
+                            <p class="lh-lg">
+                                <ul>
+                                    <li>
+                                        Developed advanced strategies for exploring the chemical space in order to optimize QSAR modeling. By leveraging techniques such as active learning and uncertainty sampling, I am able to efficiently identify key areas of the chemical space that are most likely to yield high-quality data and accurate modeling results.
+                                    </li>
+                                    <li>
+                                        Implemented a sophisticated surrogate docking pipeline that is capable of predicting the affinity of drug compounds without actually performing docking calculations. This approach enables faster and more efficient analysis of potential drug candidates, while still providing accurate and reliable insights into their properties.
+                                    </li>
+                                </ul>
+                            </p>
+                            </div>
+                        
+                    
+                    </div>
+                </div>
             <div class="row">
                 <h3 class="col-12 text-center fw-semibold py-3">Current Work</h3>
             </div>
