@@ -57,7 +57,12 @@ section {
     border-radius: 100%;
     display: inline-block;
 }
-
+#Bachelor_data {
+  height: 1000px;
+}
+#Boltzmann_work {
+  height: 1000px;
+}
 .card {
     height: 100%;
     width: auto;
@@ -106,6 +111,12 @@ section {
       height: 500px; /* set the card width to 100% for smaller screens */
       border: none;
       
+    }
+    #Bachelor_data {
+      height: 600px;
+    }
+    #Boltzmann_work{
+      height: 600px;
     }
     .card__front,
   .card__back {
