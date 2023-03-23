@@ -60,12 +60,15 @@ section {
 #Bachelor_data {
   height: 1000px;
 }
-#Boltzmann_work {
+#Boltzmann_work{
+  height: 1000px;
+}
+#Cuurent_work{
   height: 1000px;
 }
 .card {
     height: 100%;
-    width: auto;
+    width: 230px;
     outline: none;
     cursor: pointer; /* Add cursor pointer to indicate that the card is clickable */
   }
@@ -73,7 +76,7 @@ section {
   .card__front,
   .card__back {
     height: auto;
-    width: auto;
+    width: 230px;
     position: absolute;
     top: 0;
     left: 0;
@@ -110,16 +113,21 @@ section {
     .card {
       height: 500px; /* set the card width to 100% for smaller screens */
       border: none;
+      width: 350px;
       
     }
     #Bachelor_data {
-      height: 600px;
+      height: 2000px;
     }
-    #Boltzmann_work{
-      height: 600px;
+    #Boltzmann_work {
+      height: 2000px;
+    }
+    #Cuurent_work{
+      height: 2000px;
     }
     .card__front,
   .card__back {
     height: 500px;
+    width: 350px;
   }
   }
