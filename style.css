@@ -26,6 +26,7 @@ body {
 section {
     padding-top: 58px;
     padding-bottom: 58px;
+    
 }
 
 .navbar-brand {
@@ -78,6 +79,7 @@ section {
     height: 100%;
     width: 230px;
     outline: none;
+    
     cursor: pointer; /* Add cursor pointer to indicate that the card is clickable */
   }
 
@@ -89,6 +91,7 @@ section {
     top: 0;
     left: 0;
     backface-visibility: hidden;
+    padding: 10px;
     transition: transform 0.8s ease-in-out; /* Add transition for smooth flip effect */
   }
 
@@ -118,6 +121,10 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
+    #Projects{
+      justify-content: center;
+      
+    }
     .card {
       height: 500px; /* set the card width to 100% for smaller screens */
       border: none;
