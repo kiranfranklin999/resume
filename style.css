@@ -125,8 +125,12 @@ section {
     #Cuurent_work{
       height: 2000px;
     }
-    .card__front,
-  .card__back {
+    .card__front
+   {
+    height: 500px;
+    width: 350px;
+  }
+  .card__back{
     height: auto;
     width: 350px;
   }
