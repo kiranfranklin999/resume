@@ -10,7 +10,7 @@
 }
 .fw-semibold {
     font-weight: 600 !important;
-}
+} 
 .fw-extrabold {
     font-weight: 800 !important;
 }
@@ -36,13 +36,19 @@ section {
 }
 
 #Home {
-    /* background-image: url("img/home-background.jpeg"); */
-    background-color: rgb(143, 145, 147);
+  position: relative;
+    background-image: url("assets/xyz.jpg");
+    /* background: rgb(221, 221, 225); */
     background-size: cover;
     background-position: center bottom;
     height: 70vh;
     min-height: 400px;
+    /* backdrop-filter: brightness(10%); */
+    /* opacity: 70%; */
+    /* filter: grayscale(60%); */
 }
+
+
 #Home .btn {
     border: solid 2px transparent;
 }
@@ -77,22 +83,42 @@ section {
 }
 .card {
     
-    width: auto;
+    width: 380px;
+    height: 600px;
     outline: none;
     
     cursor: pointer; /* Add cursor pointer to indicate that the card is clickable */
   }
+  #Cuurent_work{
+    height: 600px;
+  }
+  #Bachelor_data {
+    height: 650px;
+  }
+  #Boltzmann_work {
+    height: 650px;
+  }
+  .card-image{
+    height: 400px;
+    width: 360px;
+    padding: 2%;
+    object-fit: contain;
+    object-position: center;
+  }
 
   .card__front,
   .card__back {
-    height: auto;
-    width: auto;
+    width: 380px;
+    height: 600px;
     position: absolute;
     top: 0;
     left: 0;
     backface-visibility: hidden;
     padding: 10px;
     transition: transform 0.8s ease-in-out; /* Add transition for smooth flip effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .card__back {
@@ -119,7 +145,10 @@ section {
 .is-flipped .card__back {
   transform: rotateY(0deg);
 }
-
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
 @media only screen and (max-width: 768px) {
     #Projects{
       justify-content: center;
@@ -130,6 +159,13 @@ section {
       border: none;
       width: 350px;
       
+    }
+    .card-image{
+      height: 350px;
+      width: 300px;
+      padding: 2%;
+      object-fit: contain;
+      object-position: center;
     }
     #Bachelor_data {
       height: 2000px;
