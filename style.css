@@ -1,160 +1,100 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
-
-*:not(i) {
-    font-family: "Open Sans", sans-serif !important;;
-}
-
-.fw-medium {
-    font-weight: 500 !important;
-}
-.fw-semibold {
-    font-weight: 600 !important;
-} 
-.fw-extrabold {
-    font-weight: 800 !important;
-}
-.text-cursive {
-    font-family: "Sacramento", cursive !important;
-}
-html {
-    scroll-padding-top: 58px;
-}
-body {
-    padding-top: 58px;
-}
-section {
-    padding-top: 58px;
-    padding-bottom: 58px;
-    
-}
-
-.navbar-brand {
-    border: solid var(--accent-4) 3px;
-    padding-right: 0.65em;
-    padding-left: 0.65em;
-}
-
-#Home {
-  position: relative;
-    background-image: url("assets/xyz.jpg");
-    /* background: rgb(221, 221, 225); */
-    background-size: cover;
-    background-position: center bottom;
-    height: 70vh;
-    min-height: 400px;
-    /* backdrop-filter: brightness(10%); */
-    /* opacity: 70%; */
-    /* filter: grayscale(60%); */
-}
-
-
-#Home .btn {
-    border: solid 2px transparent;
-}
-#Home .btn:hover {
-    background-color: transparent !important;
-    border: solid 2px var(--accent-4);
-    color: var(--accent-4) !important;
-}
-#view {
+#Home{
+  background-image: url("assets/xyz.jpg");
+  background-size: cover;
+  }
+  #Home .btn {
   border: solid 2px transparent;
 }
-#view {
+#Home .btn:hover {
   background-color: transparent !important;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-  
-}
-
-.skills-circle {
-    width: 15px; 
-    height: 15px; 
-    border-radius: 100%;
-    display: inline-block;
-}
-#Bachelor_data {
-  height: 700px;
-}
-#Boltzmann_work{
-  height: 1000px;
-}
-#Cuurent_work{
-  height: 500px;
+  border: solid 2px var(--accent-4);
+  color: var(--accent-4) !important;
 }
 .card {
-    
-    width: 380px;
-    height: 600px;
-    outline: none;
-    
-    cursor: pointer; /* Add cursor pointer to indicate that the card is clickable */
-  }
-  #Cuurent_work{
-    height: 600px;
-  }
-  #Bachelor_data {
-    height: 650px;
-  }
-  #Boltzmann_work {
-    height: 650px;
-  }
-  .card-image{
-    height: 400px;
-    width: 360px;
-    padding: 2%;
-    object-fit: contain;
-    object-position: center;
-  }
+  
+  width: 380px;
+  height: 600px;
+  outline: none;
+  
+  cursor: pointer; /* Add cursor pointer to indicate that the card is clickable */
+}
+.card-image{
+  height: 400px;
+  width: 360px;
+  padding: 2%;
+  object-fit: contain;
+  object-position: center;
+}
+.card__front,
+.card__back {
+  width: 380px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  padding: 10px;
+  transition: transform 0.8s ease-in-out; /* Add transition for smooth flip effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .card__front,
-  .card__back {
-    width: 380px;
-    height: 600px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    padding: 10px;
-    transition: transform 0.8s ease-in-out; /* Add transition for smooth flip effect */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card__back {
-    transform: rotateY(180deg);
-  }
-
-  /* Add shadow effect to the cards */
-  .card__front {
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-  }
-  .is-flipped .card__front {
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
-  }
-  .card__back {
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-  }
-  .is-flipped .card__back {
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
-  }
-  .is-flipped .card__front {
+.card__back {
   transform: rotateY(180deg);
 }
 
+/* Add shadow effect to the cards */
+.card__front {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.is-flipped .card__front {
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.card__back {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
 .is-flipped .card__back {
-  transform: rotateY(0deg);
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.is-flipped .card__front {
+transform: rotateY(180deg);
+}
+
+.is-flipped .card__back {
+transform: rotateY(0deg);
 }
 .mx-auto{
-  margin-left: auto;
-  margin-right: auto;
+margin-left: auto;
+margin-right: auto;
+}
+
+.logo{
+  height: 100px; 
+  width: 100px;
+ 
+}
+.logo_top{
+  height: 100px; 
+  width: 100px;
+  margin-right: 250px;
+}
+.logo_data_sciene{
+  
+  height: 200px; 
+  width: 350px;
+  /* margin-right: 250px; */
+
+}
+.logo_GCP{
+  
+  height: 250px; 
+  width: 250px;
+  /* margin-right: 250px; */
+
 }
 @media only screen and (max-width: 768px) {
-    #Projects{
-      justify-content: center;
-      
-    }
-    .card {
+  .card {
       height: 500px; /* set the card width to 100% for smaller screens */
       border: none;
       width: 350px;
@@ -185,211 +125,13 @@ section {
     height: auto;
     width: 350px;
   }
+  .logo{
+      height: 100px; 
+      width:100px;
   }
-
-  @keyframes pop {
-    0% {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.2);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-.hand-wave {
-  animation: wave 2s ease-in-out infinite;
-}
-
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
+  .logo_top{
+      height: 100px; 
+      width: 100px;
+      margin-right: 20px;
   }
-  25% {
-    transform: rotate(45deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(-45deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.hello-text {
-    
-    animation: wave 2s ease-in-out infinite;
-    animation-delay: 1s;
-}
-
-.A_W_T_card {
-  position: absolute;
-  height: 350px;
-  width: 100%;
-  max-width: 850px;
-  margin: auto;
-  /* margin-bottom: 500px; */
-
-  background-color: #ffffff;
-  border-radius: 25px;
-  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.A_W_T_card .inner_part {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 0 0 30px;
-  height: 350px;
-  position: absolute;
-}
-
-#slideImg:checked ~ .inner_part {
-  padding: 0;
-  transition: .1s ease-in;
-}
-
-.inner_part .img {
-  height: 260px;
-  width: 260px;
-  overflow: hidden;
-  flex-shrink: 0;
-  border-radius: 20px;
-  box-shadow: 0 10px 10px rgba(0,0,0,0.2);
-}
-
-#slideImg:checked ~ .inner_part .img {
- height: 350px;
- width: 850px;
- z-index: 99;
- transition: .3s .2s ease-in;
-}
-
-.img img {
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-  opacity: 0;
-  transition: .6s;
-}
-
-#slide_1:checked ~ .inner_part .img_1,
-#slide_2:checked ~ .inner_part .img_2,
-#slide_3:checked ~ .inner_part .img_3,
-#slide_4:checked ~ .inner_part .img_4 {
-  opacity: 1;
-  transition-delay: .2s;
-}
-
-.content {
-  padding: 0 20px 0 35px;
-  width: 530px;
-  margin-left: 50px;
-  opacity: 0;
-  transition: .6s; 
-}
-
-#slideImg:checked ~ .inner_part .content {
-  display: none;
-}
-
-#slide_1:checked ~ .inner_part .content_1,
-#slide_2:checked ~ .inner_part .content_2,
-#slide_3:checked ~ .inner_part .content_3, 
-#slide_4:checked ~ .inner_part .content_4{
-  opacity: 1;
-  margin-left: 0;
-  z-index: 100;
-  transition-delay: .3s;
-}
-
-.content .title {
-  font-size: 30px;
-  font-weight: 700;
-  color: #0d0925;
-  margin: 0 0 20px 0;
-}
-
-.content .text {
-  font-size: 19px;
-  color: #4e4a67;
-  margin: 0 auto 30px auto;
-  line-height: 1.5em;
-  text-align: justify;
-}
-
-.content button {
-  padding: 15px 20px;
-  border: none;
-  font-size: 16px;
-  color: #fff0e6;
-  font-weight: 600;
-  letter-spacing: 1px;
-  border-radius: 50px;
-  cursor: pointer;
-  outline: none;
-  background: #000000;
-  float: right;
-}
-
-.content button:hover {
-  background: #cecece;
-  color: #000000;
-}
-
-.slider {
-  position: absolute;
-  bottom: 25px;
-  left: 55%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-#slideImg:checked ~ .slider {
-  display: none;
-}
-
-.slider .slide {
-  position: relative;
-  height: 10px;
-  width: 50px;
-  background: #d9d9d9;
-  border-radius: 5px;
-  display: inline-flex;
-  margin: 0 3px;
-  cursor: pointer;
-}
-
-
-.slider .slide:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: -100%;
-  background: #000000;;
-  border-radius: 10px;
-  transform: scaleX(0);
-  transition: transform .6s;
-  transform-origin: left;
-}
-
-#slide_1:checked ~ .slider .slide_1:before,
-#slide_2:checked ~ .slider .slide_2:before,
-#slide_3:checked ~ .slider .slide_3:before,
-#slide_4:checked ~ .slider .slide_4:before {
-  transform: scaleX(1);
-  width: 100%;
-}
-
-input {
-  display: none;
 }
