@@ -77,7 +77,8 @@ margin-right: auto;
 .logo_top{
   height: 100px; 
   width: 100px;
-  margin-right: 250px;
+  /* margin-left: 50px; */
+  margin-right: 200px;
 }
 .logo_data_sciene{
   
@@ -88,9 +89,18 @@ margin-right: auto;
 }
 .logo_GCP{
   
-  height: 250px; 
-  width: 250px;
-  /* margin-right: 250px; */
+  height: 300px; 
+  width: 400px;
+  align-items: center;
+
+}
+.logo_bio{
+  
+  height: 150px; 
+  width: 180px;
+  /* align-items: center; */
+  margin-right: 100px;
+  margin-left: 100px;
 
 }
 @media only screen and (max-width: 768px) {
