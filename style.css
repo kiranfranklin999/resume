@@ -10,6 +10,14 @@
   border: solid 2px var(--accent-4);
   color: var(--accent-4) !important;
 }
+.card .btn {
+  border: solid 2px transparent;
+}
+.card .btn:hover {
+  background-color: transparent !important;
+  border: solid 2px var(--accent-4);
+  color: var(--accent-4) !important;
+}
 .card {
   
   width: 380px;
