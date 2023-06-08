@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="color.css">
     <script src="https://kit.fontawesome.com/9209300180.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <title>Kiran Franklin | Senior Research Associate | Aspring AI & Bioinformatics Engineer</title>
     <script>
         function toggleCard(card) {
@@ -793,27 +795,130 @@ Over the course of the internship, I successfully deployed more than 25 real-tim
                     <h4>MolPro</h4><h6>MolPro is a comprehensive python package for small molecule generation using protein active site or/and similar molecules using 3D information of molecules with in-silico validation of molecules by docking , pharmacophore hypothesis. Also off target prediction based on the binding site similarities.</h6>
                     <h7><a href="https://github.com/boltzmannlabs/molpro">MolPro</a></h7>
                 
-            <br>
-            <br>
-            <br>
-            <i class="fa-solid fa-briefcase h3"></i>
-            <h3 class="text-accent-4 text-cursive"><u>Others</u></h3>
-            <h6> My interest is in integrating Omics and Cheminformatics data to enhance drug discovery. To pursue this goal, I recognize the importance of upskilling myself in Data Science and Bio/Cheminformatics skills. As part of my efforts to upskill, I have worked on a few mini projects in the field of Data Science and have shared the project code and details on my <a href="https://github/kiranfranklin999">Github</a> repository</h6>
-        </div>
+                    <br>
+                    <br>
+                    <br>
+                    <i class="fa-solid fa-briefcase h3"></i>
+                    <h3 class="text-accent-4 text-cursive"><u>Others</u></h3>
+                    <h6> My interest is in integrating Omics and Cheminformatics data to enhance drug discovery. To pursue this goal, I recognize the importance of upskilling myself in Data Science and Bio/Cheminformatics skills. As part of my efforts to upskill, I have worked on a few mini projects in the field of Data Science and have shared the project code and details on my <a href="https://github/kiranfranklin999">Github</a> repository</h6>
+                </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <h1 class="col-12 text-center fw-semibold py-3">Acheviments</h1>
-                <p>Participated and won 1st prize for paper presentation in international conference” HORIZON 2019.
-                </p>
-                <p>Outstanding Employee Award, March, 2023.
-                </p>
+                <div class="col-12 col-md-6 px-5 pt-4 pt-0 pt-md-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-trophy" style="font-size:35px;color:red; margin-right: 10px;"></i>
+                    <p class="my-0 ml-2">Participated and won 1st prize for paper presentation in international conference” HORIZON 2019.
+                    </p>
+                </div>
+                </div>
+                <div class="col-12 col-md-6 px-5 pt-4 pt-0 pt-md-4">
+                    <div class="d-flex align-items-center">
+                    <i class='fas fa-award mr-6' style='font-size:35px;color:red; margin-right: 10px;'></i>
+                    
+                    <p class="my-0 ml-2">    Outstanding Employee Award, March, 2023.
+                    </p>
+                    </div>
+                </div>
+                
             </div>
             <div class="row bg-light-grey">
                 <h1 class="col-12 text-center fw-semibold py-3">Training/Workshops</h1>
                 <p>User-end bioinformatics for molecular biology (includes NGS and Microarray data analysis), Shodhaka Life
                     Science Pvt. Ltd.</p>
+            </div> -->
+            <div class="row justify-content-center align-items-center" style="margin-top: 200px; margin-bottom: 200px;">
+            <div class="A_W_T_card">
+                <input type="radio" name="select" id="slide_1" checked>
+                <input type="radio" name="select" id="slide_2">
+                <input type="radio" name="select" id="slide_3">
+                <input type="radio" name="select" id="slide_4">
+                <input type="checkbox" id="slideImg">
+              
+                <div class="slider">
+                  <label for="slide_1" class="slide slide_1"></label>
+                  <label for="slide_2" class="slide slide_2"></label>
+                  <label for="slide_3" class="slide slide_3"></label>
+                  <label for="slide_4" class="slide slide_4"></label>
+                </div>
+                <div class="inner_part">
+                    <label for="slideImg" class="img">
+                      <img class="img_1" src="assets/cup.png">
+                      <!-- <i class='fas fa-trophy'></i> -->
+                    </label>
+                    <div class="content content_1">
+                      <div class="title">Acheviments</div>
+                      <div class="text">
+                        Participated and won 1st prize for paper presentation in international conference” HORIZON 2019.
+                      </div>
+                      
+                    </div>
+                  </div>
+                
+                  <div class="inner_part">
+                    <label for="slideImg" class="img">
+                      <img class="img_2" src="assets/award.png">
+                      <!-- <i class='fas fa-award'></i> -->
+                    </label>
+                    <div class="content content_2">
+                      <div class="title">Awards</div>
+                      <div class="text">
+                        Outstanding Employee Award, March, 2023.
+                      </div>
+                      
+                    </div>
+                  </div>
+                
+                  <div class="inner_part">
+                    <label for="slideImg" class="img">
+                      <img class="img_3" src="assets/training.png">
+                      <!-- <i class='fas fa-chalkboard-teacher'></i> -->
+                    </label>
+                    <div class="content content_3">
+                      <div class="title">Training/Workshops</div>
+                      <div class="text">User-end bioinformatics for molecular biology (includes NGS and Microarray data analysis), Shodhaka Life
+                        Science Pvt. Ltd.
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="inner_part">
+                    <label for="slideImg" class="img">
+                      <img class="img_4" src="assets/courses.png">
+                      <!-- <i class='fas fa-trophy'></i> -->
+                    </label>
+                    <div class="content content_4">
+                      <div class="title">Professional Courses</div>
+                      <div class="text" style="font-size: medium;">
+                      <!-- 1. Application of Proteomics and Interactomics, NPTEL.
+                      2. Introduction to Genomic Data science and bio python, Cousera.
+                      <li>
+                        Application of Proteomics and Interactomics, NPTEL.
+                    </li> -->
+                        
+                            <li>
+                                Application of Proteomics and Interactomics, NPTEL.
+                            </li>
+                            <li>
+                                Introduction to Genomic Data science and bio python, Cousera.
+                            </li>
+                            <li>
+                                Machine Learning: A-Z hands on Python and R in Data Science, Udemy
+                            </li>
+                            <li>
+                                Full stack Data Science, ineuron
+                            </li> 
+                            <li>
+                                GCP Data Engineering, Percipio.
+                            </li>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
             </div>
-            <div class="row ">
+            </div>
+            <!-- <div class="row ">
                 <h1 class="col-12 text-center fw-semibold py-3">Professional Courses</h1>
                 <ul>
                     <li>
@@ -832,7 +937,7 @@ Over the course of the internship, I successfully deployed more than 25 real-tim
                         GCP Data Engineering, Percipio.
                     </li>
                 </ul>
-            </div>
+            </div> -->
             <div class="row bg-light-grey">
                 <h1 class="col-12 text-center fw-semibold py-3">Language Proficiency</h1>
                 <h4>IELTS : English</h4>
